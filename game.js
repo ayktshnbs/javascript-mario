@@ -15,5 +15,7 @@ function register (event) {
         event.target.elements ['register-email'].value,
         event.target.elements ['register-password'].value,
         event.target.elements ['register-username'].value,
-)
+    ),then(response => {
+        console.log(response)
+    })
 }
